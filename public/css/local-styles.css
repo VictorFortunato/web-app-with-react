@@ -1,5 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap");
 
+h4 {
+    color:  #0F599F;
+    font-family: 'Charm', cursive;
+    font-size:30px;
+}
 a {
     transition: all 0.3s ease-out 0s;
     outline: none !important;
@@ -69,7 +74,7 @@ img {
 header {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     position: relative;
 }
 
