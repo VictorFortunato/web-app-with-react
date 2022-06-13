@@ -1,8 +1,11 @@
-function SpeakersToolbar({ theme, setTheme, showSessions, setShowSessions }) {
+function SpeakersToolbar({ theme, setTheme, showSessions, setShowSessions,showFavorites, setShowFavorites}) {
+
+  
   return (
     <section className="toolbar dark-theme-header">
       <div className="container">
-        <div className="justify-content-between">
+        <div className="justify-content-between ">
+
           <ul className="toolrow d-flex flex-column flex-lg-row">
             <li className="d-flex flex-column flex-md-row">
               <b>Show Sessions&nbsp;&nbsp;</b>
@@ -11,7 +14,7 @@ function SpeakersToolbar({ theme, setTheme, showSessions, setShowSessions }) {
                   type="checkbox"
                   checked={showSessions}
                   onChange={(event) => {
-                    setShowSessions(event.target.checked);
+                  setShowSessions(event.target.checked);
                   }}
                 />
                 <span className="switch"></span>
@@ -32,6 +35,20 @@ function SpeakersToolbar({ theme, setTheme, showSessions, setShowSessions }) {
                 </select>
               </label>
             </li>
+            <li className="d-flex flex-column flex-md-row">
+              <b>Favorites&nbsp;&nbsp;</b>
+              <label className="fav">
+                <input
+                  type="checkbox"
+                  checked={showFavorites}
+                  onChange={(event) => {
+                  setShowFavorites(event.target.checked);
+                  }}
+                />
+                <span className="switch"></span>
+              </label>
+            </li>
+         
           </ul>
         </div>
       </div>

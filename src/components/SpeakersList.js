@@ -2,7 +2,7 @@ import Speaker from "./Speaker";
 import { data } from "../../SpeakerData";
 import { useState } from "react";
 
-function SpeakersList({ showSessions }) {
+function SpeakersList({ showSessions, showFavorites}) {
   const [speakersData, setSpeakersData] = useState(data);
 
   function onFavoriteToggle(id) {
@@ -28,6 +28,7 @@ function SpeakersList({ showSessions }) {
             <Speaker
               key={speaker.id}
               speaker={speaker}
+              showFavorites = {showFavorites}
               showSessions={showSessions}
               onFavoriteToggle={() => {
                 onFavoriteToggle(speaker.id);

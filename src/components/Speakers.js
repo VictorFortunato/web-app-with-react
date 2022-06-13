@@ -4,6 +4,8 @@ import { useState } from "react";
 
 function Speakers({ theme, setTheme }) {
   const [showSessions, setShowSessions] = useState(true);
+  const [showFavorites, setShowFavorites] = useState(true);
+
 
   return (
     <>
@@ -12,8 +14,10 @@ function Speakers({ theme, setTheme }) {
         setTheme={setTheme}
         showSessions={showSessions}
         setShowSessions={setShowSessions}
+        showFavorites = {showFavorites}
+        setShowFavorites = {setShowFavorites}
       />
-      <SpeakersList showSessions={showSessions} />
+      <SpeakersList showSessions={showSessions} showFavorites ={showFavorites}/>
     </>
   );
 }

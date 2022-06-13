@@ -13,6 +13,13 @@ function Sessions({ sessions }) {
     </div>
   );
 }
+function Favorite(favoritte){
+  return(
+    <div>
+        
+    </div>
+  )
+}
 
 function SpeakerImage({ id, first, last }) {
   return (
@@ -79,8 +86,8 @@ function SpeakerDemographics({
   );
 }
 
-function Speaker({ speaker, showSessions, onFavoriteToggle }) {
-  const { id, first, last, sessions } = speaker;
+function Speaker({ speaker, showSessions, onFavoriteToggle, showFavorite}) {
+  const { id, first, last, sessions , favoritte} = speaker;
   return (
     <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-sm-12 col-xs-12">
       <div className="card card-height p-4 mt-4">
@@ -88,6 +95,7 @@ function Speaker({ speaker, showSessions, onFavoriteToggle }) {
         <SpeakerDemographics {...speaker} onFavoriteToggle={onFavoriteToggle} />
       </div>
       {showSessions === true ? <Sessions sessions={sessions} /> : null}
+      {showFavorite === true ? <Favorite favoritte={favoritte} /> : null}
     </div>
   );
 }
