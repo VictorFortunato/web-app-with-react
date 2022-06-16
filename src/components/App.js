@@ -3,11 +3,11 @@ import { useState } from "react";
 import Speakers from "./Speakers";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("Custom");
   return (
     <div
       className={
-        theme === "light" ? "container-fluid light" : "container-fluid dark"
+        theme === "Custom" ? "container-fluid light" : "container-fluid dark"
       }
     >
       <Header theme={theme} />

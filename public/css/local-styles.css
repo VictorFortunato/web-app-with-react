@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap');
 
 h4 {
-    color:  #3c648a;
+    color:  #8f2424;
     font-family: 'Gentium Plus', serif;
-    font-size: 35px;
+    font-size: 38px;
     
 }
 body{
    
-    background-image: linear-gradient(90deg, #b5b3d3 0%, #7f7f9b 35%, #777d7e 100%);
+    background-image: linear-gradient(90deg, #f9f9fa 0%, #efeff5 35%, #777d7e 100%);
 }
 a {
     transition: all 0.3s ease-out 0s;

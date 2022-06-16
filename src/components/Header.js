@@ -9,10 +9,10 @@ function Header({ theme }) {
           <div className="light">
             <h4 className="header-title">Caretag Promotes: International Conference</h4>
           </div>
-          <div className={theme === "light" ? "" : "text-info"}>
+          <div className={theme === "Custom" ? "" : "text-info"}>
             Hello Mr. Fortunato &nbsp;&nbsp;
             <span>
-              <a href="#">sign-out</a>
+              <button >sign out</button>
             </span>
           </div>
         </div>

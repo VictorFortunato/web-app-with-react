@@ -30,7 +30,7 @@ function SpeakersToolbar({ theme, setTheme, showSessions, setShowSessions,showFa
                     setTheme(event.target.value);
                   }}
                 >
-                  <option value="light">Light</option>
+                  <option value="Custom">Custom</option>
                   <option value="dark">Dark</option>
                 </select>
               </label>

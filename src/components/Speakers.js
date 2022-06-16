@@ -17,7 +17,9 @@ function Speakers({ theme, setTheme }) {
         showFavorites = {showFavorites}
         setShowFavorites = {setShowFavorites}
       />
-      <SpeakersList showSessions={showSessions} showFavorites ={showFavorites}/>
+      <SpeakersList 
+      showSessions={showSessions} 
+      showFavorites={showFavorites}/>
     </>
   );
 }

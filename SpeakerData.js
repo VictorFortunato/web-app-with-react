@@ -491,7 +491,7 @@ export const data = [
   {
     id: "1124",
     first: "Michael",
-    last: "Liebig",
+    last: "Leibig",
     company: "Caretag",
     bio:
       "Michael Leibig is a Chairman of the Board at Medcare",
